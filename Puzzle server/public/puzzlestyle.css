@@ -1,0 +1,91 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+#wordle-grid {
+
+    border: 2px solid #ddd;
+}
+
+.cell {
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 80px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    display: inline-block;
+}
+
+.gray {
+    background-color: #ddd;
+    color: solid black;
+}
+
+.yellow {
+    background-color: #ffcc00;
+    color: solid black;
+}
+
+.green {
+    background-color: #008000;
+    color: solid black;
+}
+
+#keyboard {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin-top: 20px;
+}
+
+.key {
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    font-size: 1em;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: #eee;
+}
+
+#message {
+    margin-top: 20px;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.win {
+    color: green;
+}
+
+.lose {
+    color: red;
+}
+
+.row {
+    display: block;
+}
+
+.hidden {
+    display: none;
+}
